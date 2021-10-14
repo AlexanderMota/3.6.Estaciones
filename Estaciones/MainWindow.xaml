@@ -1,0 +1,63 @@
+﻿<Window x:Class="Estaciones.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Estaciones"
+        mc:Ignorable="d"
+        Title="MainWindow" Icon="/img/128.ico"
+        Height="650" Width="900">
+    <Grid Background="#FFC6F3ED">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="50"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Viewbox>
+            <TextBlock
+                Grid.Row="0"
+                Grid.Column="0"
+                Text="Las 4 estaciones"
+                FontWeight="Bold"
+                FontFamily="Gabriola">
+                <TextBlock.Foreground>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="#FFCF5527"/>
+                        <GradientStop Color="#FF5EA0BF" Offset="0.858"/>
+                    </LinearGradientBrush>
+                </TextBlock.Foreground>
+            </TextBlock>
+
+        </Viewbox>
+        <UniformGrid
+            Grid.Row="1"
+            Grid.Column="0">
+            <ScrollViewer 
+                VerticalScrollBarVisibility="Auto"
+                HorizontalScrollBarVisibility="Auto"
+                Margin="10">
+                <Image Source="/img/invierno.jpg"/>
+            </ScrollViewer>
+            <ScrollViewer 
+                VerticalScrollBarVisibility="Auto"
+                HorizontalScrollBarVisibility="Auto"
+                Margin="10">
+                <Image Source="/img/primavera.jpg"/>
+            </ScrollViewer>
+            <ScrollViewer 
+                VerticalScrollBarVisibility="Auto"
+                HorizontalScrollBarVisibility="Auto"
+                Margin="10">
+                <Image Source="/img/verano.jpg"/>
+            </ScrollViewer>
+            <ScrollViewer 
+                VerticalScrollBarVisibility="Auto"
+                HorizontalScrollBarVisibility="Auto"
+                Margin="10">
+                <Image Source="/img/otoño.jpg"/>
+            </ScrollViewer>
+        </UniformGrid>
+    </Grid>
+</Window>
