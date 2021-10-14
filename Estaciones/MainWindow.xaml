@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Estaciones"
         mc:Ignorable="d"
-        Title="MainWindow" Icon="/img/128.ico"
+        Title="Estaciones" Icon="/img/128.ico"
         Height="650" Width="900">
     <Grid Background="#FFC6F3ED">
         <Grid.RowDefinitions>
